@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Flickr Livesearch</title>
+</head>
+
+<body>
+  <form id="form" action="https://api.flickr.com/services/rest/">
+    <input type="hidden" name="api_key" value="3f825823a46925b8405bf143d8df391f">
+    <input type="hidden" name="method" value="flickr.photos.search">
+    <input type="hidden" name="format" value="json">
+    <input type="hidden" name="nojsoncallback" value="1">
+    <input type="hidden" name="per_page" value="35">
+    <input type="text" name="text">
+  </form>
+  <ul id="results"><li>no results yet</li></ul>
+
+  <script src="./js/livesearch.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
